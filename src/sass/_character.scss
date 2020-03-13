@@ -1,0 +1,12 @@
+
+#character {
+  &.v-1 {
+    position: absolute;
+    width: 30px;
+    height: 53px;
+    left: 0;
+    top: calc(50% - 53px);
+    z-index: 6;
+    background-image: url(../images/v-1.png);
+  }
+}

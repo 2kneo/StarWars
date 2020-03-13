@@ -1,0 +1,58 @@
+.language {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  .title {
+    padding: 0 5px 0 0;
+    color: #55e3fa;
+    vertical-align: middle;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    img {
+      max-width: 30px;
+    }
+  }
+  ul {
+    display: none;
+    position: absolute;
+    width: 60px;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #fff;
+    @include border-r(6px);
+    li {
+      @extend .ib-100;
+      padding: 3px;
+      text-align: center;
+      img {
+        max-width: 30px;
+      }
+      &.active {
+        a {
+          color: #3ba8ff; 
+        }
+      }
+      a {
+        @extend .ib-100;
+        color: #989898;
+        font-size: 13px;
+        vertical-align: text-top;
+        &:hover {
+          color: #3ba8ff;
+          text-decoration: none;
+        }
+        span {
+          float: left;
+          width: 30px;
+          margin: 2px 5px 0 0;
+        }
+      }
+      &:hover {
+        color: #043095;
+      }
+    }
+  }
+}

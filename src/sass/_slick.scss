@@ -1,0 +1,42 @@
+.slick-slide {
+  padding: 0 15px; 
+  outline: none;
+  .slick-list {
+    padding: 0;
+  }
+}
+.slick-slider {
+  padding: 0 60px;
+}
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  color: #68819a;
+  background-color: #fff;
+  background-image: url(../images/btn.png);
+  background-position: center;
+  @include border-r(50%);
+  @include box-s(rem(0 0 35px #c0d3ff));
+}
+.slick-prev {
+  background-position: left top;
+  &:hover {
+    background-position: left bottom;
+  }
+}
+.slick-next {
+  left: inherit;
+  right: 0;
+  background-position: right top;
+  &:hover {
+    background-position: right bottom;
+  }
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  background-color: #c0d3ff !important;
+}

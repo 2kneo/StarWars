@@ -1,0 +1,14 @@
+{
+  "students": [
+    {
+      "name": "Natalia",
+      "surname": "Kh",
+      "balls": [8, 9, 1, 3]
+    },
+    {
+      "name": "Ivan",
+      "surname": "Inavov",
+      "balls": [1, 2, 3, 4]
+    }
+  ]
+}

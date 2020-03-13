@@ -1,0 +1,49 @@
+header {
+  padding: 15px;
+  margin-bottom: 30px;
+  background: #33363c;
+  border-radius: 0 0 8px 8px;
+  img {
+    width: 40px;
+  }
+  .form-group {
+    margin: 0;
+  }
+}
+
+.bar,
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  margin: 0 0 20px;
+  background: #fff;
+  border-radius: 8px;
+  .widget-title {
+    margin: 0 -20px 20px;
+    padding: 0 20px 15px;
+    color: #33363c;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #f0f0ed;
+    a {
+      color: #33363c;
+    }
+  }
+}
+
+.form-group {
+  &.required {
+    label:after {
+      content: " *";
+      color: #f00;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  header {
+    .form-group {
+      margin: 0 0 15px;
+    }
+  }
+}

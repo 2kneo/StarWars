@@ -1,0 +1,71 @@
+.faq {
+  padding: 50px 0 0;
+  .accordion {
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+      color: #404040;
+      font-weight: 700;
+      font-size: 17px;
+      outline: none;
+      border: none;
+      background-color: #fff;
+    }
+    .ui-accordion-content {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+     .ui-state-active {
+      border-color: transparent;
+    }
+    p {
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .ui-widget-content {
+      margin: 0 0 20px;
+      color: #7f7f7f;
+      font-size: 16px;
+      line-height: 30px;
+      border: none;
+      background-color: transparent;
+    }
+    .ui-accordion-header {
+      padding: 25px 0;
+      border: 1px solid #ededed;
+    }
+    .ui-accordion-content-active {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ededed;
+    }
+    &.ui-accordion .ui-accordion-icons {
+      padding-right: 60px;
+      padding-left: 20px;
+      cursor: pointer;
+      img {
+        margin: 0 10px 0;
+      }
+    }
+    &.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+      position: absolute;
+      right: 20px;
+      left: inherit;
+      top: 50%;
+      margin-top: -13px;
+    }
+    .ui-icon {
+      width: 18px;
+      height: 26px;
+    }
+    .ui-state-default .ui-icon {
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .ui-icon-triangle-1-s {
+      background-image: url(../images/minus.png);
+    }
+    .ui-icon-triangle-1-e {
+      background-image: url(../images/plus.png);
+    }
+  }
+}
