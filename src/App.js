@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./sass/style.scss";
+import "./scss/style.scss";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 import Header from "./components/header/Header";

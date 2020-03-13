@@ -47,7 +47,7 @@ module.exports = {
             }
           },
           {
-            loader: "sass-loader",
+            loader: "scss-loader",
             options: {
               sourceMap: isDevelopment
             }
@@ -61,7 +61,7 @@ module.exports = {
           isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
           {
-            loader: "sass-loader",
+            loader: "scss-loader",
             options: {
               sourceMap: isDevelopment
             }
@@ -70,7 +70,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/,
-        loader: "file-loader?name=images/[name].[ext]"
+        loader: "file-loader?name=img/[name].[ext]"
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
